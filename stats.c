@@ -32,4 +32,8 @@ struct Stats compute_statistics(const * numbers, int count)
       
   }
   stats.avg  = stats.avg /count;
+
+  return stats;
 }
+
+
