@@ -6,11 +6,11 @@ struct{
   float min,
   float max;
   float avg;
-}
+}Stats;
 
 struct Stats compute_statistics(const * numbers, int count)
 {
-  struct stats stats;
+  struct Stats Stats;
   stats.min = FLT_MAX;
   stats.max = -FLT_MAX;
   stats.avg = 0.0f;
@@ -33,7 +33,7 @@ struct Stats compute_statistics(const * numbers, int count)
   }
   stats.avg  = stats.avg /count;
 
-  return stats;
+  return Stats;
 }
 
 
