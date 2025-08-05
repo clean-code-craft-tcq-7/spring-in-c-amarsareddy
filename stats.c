@@ -1,4 +1,4 @@
-#include "stats.h"
+#include <stats.h>
 #include <stddef.h>
 #include <float.h>
 
@@ -7,7 +7,7 @@ struct Stats compute_statistics(const * numbers, int count)
   struct Stats Stats;
   stats.min = FLT_MAX;
   stats.max = -FLT_MAX;
-  stats.avg = 0.0f;
+  stats.average = 0.0f;
   int i;
 
   for(i=0; i<= count ;i++)
@@ -22,10 +22,10 @@ struct Stats compute_statistics(const * numbers, int count)
       stats.max = numbers[i];
     }
     
-    stats.avg = stats.avg + numbers[i];
+    stats.average = stats.average + numbers[i];
       
   }
-  stats.avg  = stats.avg /count;
+  stats.average  = stats.average /count;
 
   return Stats;
 }
