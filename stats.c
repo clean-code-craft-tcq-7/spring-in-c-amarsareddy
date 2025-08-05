@@ -2,12 +2,6 @@
 #include <stddef.h>
 #include <float.h>
 
-struct{
-  float min,
-  float max;
-  float avg;
-}Stats;
-
 struct Stats compute_statistics(const * numbers, int count)
 {
   struct Stats Stats;
