@@ -5,27 +5,27 @@
 struct Stats compute_statistics(const * numbers, int count)
 {
   struct Stats Stats;
-  stats.min = FLT_MAX;
-  stats.max = -FLT_MAX;
-  stats.average = 0.0f;
+  Stats .min = FLT_MAX;
+  Stats .max = -FLT_MAX;
+  Stats .average = 0.0f;
   int i;
 
   for(i=0; i<= count ;i++)
   {
     if(numbers[i] < stats.min)
     {
-      stats.min = numbers[i];
+      Stats.min = numbers[i];
     }
 
     if(numbers[i] > stats.max)
     {
-      stats.max = numbers[i];
+      Stats.max = numbers[i];
     }
     
-    stats.average = stats.average + numbers[i];
+    Stats.average = Stats.average + numbers[i];
       
   }
-  stats.average  = stats.average /count;
+  Stats.average  = Stats.average /count;
 
   return Stats;
 }
