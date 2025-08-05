@@ -7,7 +7,7 @@ extern "C" {
 struct Stats {
 };
 
-struct Stats compute_statistics(const * numbers, int count);
+struct Stats compute_statistics(const float * numbers, int count);
 
 struct{
   float min,
