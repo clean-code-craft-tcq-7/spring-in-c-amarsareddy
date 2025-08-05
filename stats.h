@@ -12,8 +12,8 @@ struct Stats compute_statistics(const float * numbers, int count);
 struct{
   float min;
   float max;
-  float avg;
-}Stats
+  float average;
+}Stats;
 
 #ifdef __cplusplus
 }
